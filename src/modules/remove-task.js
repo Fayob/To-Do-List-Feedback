@@ -1,4 +1,4 @@
-export const removeSingleTask = () => {
+const removeSingleTask = () => {
   document.querySelectorAll('.fa-trash').forEach((ele) => {
     ele.addEventListener('click', () => {
       let tasks = JSON.parse(localStorage.getItem('TODO')) || [];
@@ -37,3 +37,5 @@ export const removeCompletedTasks = () => {
     window.location.reload();
   });
 };
+
+export default removeSingleTask;

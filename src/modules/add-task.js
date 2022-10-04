@@ -1,10 +1,13 @@
+// adding a task to the list
+
 const input = document.querySelector('.input');
 const addToLists = () => {
   input.addEventListener('keypress', (e) => {
     const tasks = JSON.parse(localStorage.getItem('TODO')) || [];
     if (e.key === 'Enter') {
       if (!input.value) {
-        alert('Please enter a task');
+        input.setCustomValidity('Please enter a task');
+        input.reportValidity();
         return;
       }
 

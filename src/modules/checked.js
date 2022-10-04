@@ -1,4 +1,6 @@
-export const checked = (check, tasks) => {
+// checked functions
+
+const checked = (check, tasks) => {
   const index = check.dataset.id - 1;
 
   if (tasks[index].completed) {
@@ -30,3 +32,5 @@ export const checkboxClick = () => {
     });
   });
 };
+
+export default checked;

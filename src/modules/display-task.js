@@ -1,3 +1,5 @@
+// rendering the task dynamically
+
 const ul = document.querySelector('.to_do_lists');
 
 const renderLists = () => {
